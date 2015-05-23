@@ -16,6 +16,6 @@ Jádro pro vývoj webových stránek.
 3. "grunt"
 
 ## Použití:
-Díky Gruntu a LiveReload (je-li spuště příkazem "grunt") běží automatická kompilace LESS => CSS a následná minifikace do jednoho souboru do složky /dist/
+Díky Gruntu a LiveReloadu (je-li spuštěn příkazem "grunt") běží automatická kompilace LESS => CSS a následná minifikace do jednoho souboru do složky /dist/
 
 Upravujete tedy pouze styly ve složce /less/ a skripty ve složce /js/ - při každé úpravě JavaScriptu v této složce se uloží do jednoho souboru a zkomprimují stejně jako u LESSu do složky /dist/.
