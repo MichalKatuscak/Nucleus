@@ -25,9 +25,7 @@
     <![endif]-->
     <title></title>
     
-    <?php if ($_SERVER["SERVER_ADDR"] == "::1"): ?>
-        <script src="http://localhost:35729/livereload.js"></script>
-    <?php endif; ?>
+    <script src="http://localhost:35729/livereload.js"></script>
 </head>
 <body>
     <header>
