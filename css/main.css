@@ -1,4 +1,4 @@
-/*! nucleus 2015-05-23 8:29:38 */
+/*! nucleus 2015-05-23 8:56:44 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,18 +151,19 @@ table {
 .row .cell {
   float: left;
 }
+.w16 {
+  width: 16.66666667%;
+}
 .w25 {
   width: 25%;
 }
 .w33 {
-  width: 33.333333333%;
   width: 33.33333333%;
 }
 .w50 {
   width: 50%;
 }
 .w66 {
-  width: 66.666666666%;
   width: 66.66666667%;
 }
 .w75 {
@@ -170,6 +171,75 @@ table {
 }
 .w100 {
   width: 100%;
+}
+@media screen and (max-width: 1366px) {
+  .pc_w16 {
+    width: 16.66666667%;
+  }
+  .pc_w25 {
+    width: 25%;
+  }
+  .pc_w33 {
+    width: 33.33333333%;
+  }
+  .pc_w50 {
+    width: 50%;
+  }
+  .pc_w66 {
+    width: 66.66666667%;
+  }
+  .pc_w75 {
+    width: 75%;
+  }
+  .pc_w100 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .tablet_w16 {
+    width: 16.66666667%;
+  }
+  .tablet_w25 {
+    width: 25%;
+  }
+  .tablet_w33 {
+    width: 33.33333333%;
+  }
+  .tablet_w50 {
+    width: 50%;
+  }
+  .tablet_w66 {
+    width: 66.66666667%;
+  }
+  .tablet_w75 {
+    width: 75%;
+  }
+  .tablet_w100 {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .mobile_w16 {
+    width: 16.66666667%;
+  }
+  .mobile_w25 {
+    width: 25%;
+  }
+  .mobile_w33 {
+    width: 33.33333333%;
+  }
+  .mobile_w50 {
+    width: 50%;
+  }
+  .mobile_w66 {
+    width: 66.66666667%;
+  }
+  .mobile_w75 {
+    width: 75%;
+  }
+  .mobile_w100 {
+    width: 100%;
+  }
 }
 /**********
  * Mixins *
