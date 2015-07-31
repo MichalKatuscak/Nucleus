@@ -6,6 +6,13 @@ module.exports = function(grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
     
+    bower_concat: {
+      all: {
+        dest: theme+'/js/_bower.js',
+        cssDest: theme+'/css/_bower.css'
+      }
+    },
+    
     uglify: {
       options: {
         banner: '/*! <%= pkg.name %> <%= grunt.template.today("yyyy-mm-dd h:MM:ss") %> */\n'
@@ -70,16 +77,16 @@ module.exports = function(grunt) {
       },
       css: {
         files: [theme+'/css/*.css'],
-        tasks: ['cssmin','autoprefixer'],
+        tasks: ['cssmin','autoprefixer']
       },
       script: {
         files: [theme+'/js/*.js'],
-        tasks: ['uglify'],
+        tasks: ['uglify']
       },
       shell: {
         files: ['version.txt'],
-        tasks: ['shell'],
-      },
+        tasks: ['shell']
+      }
     }
   });
 
@@ -87,9 +94,10 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-less');
   grunt.loadNpmTasks('grunt-autoprefixer');
+  grunt.loadNpmTasks('grunt-bower-concat');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
-  grunt.registerTask('default', ['uglify', 'less', 'cssmin', 'autoprefixer', 'watch']);
+  grunt.registerTask('default', ['bower_concat', 'uglify', 'less', 'cssmin', 'autoprefixer', 'watch']);
 
 };

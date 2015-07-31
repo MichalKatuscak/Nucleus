@@ -8,12 +8,13 @@ Jádro pro vývoj webových stránek.
 - HTML
 - LESS
 - JavaScript
-- Node.JS - Grunt
+- Node.JS - Grunt, Bower
 
 ## Instalace:
 1. Stáhnout projekt a spustit příkazovou řádku
 2. "npm install"
-3. "grunt"
+3. "npm install -g bower" (pokud chcete používat Bower)
+4. "grunt"
 
 ## Použití:
 Díky Gruntu a LiveReloadu (je-li spuštěn příkazem "grunt") běží automatická kompilace LESS => CSS a následná minifikace do jednoho souboru do složky /dist/
