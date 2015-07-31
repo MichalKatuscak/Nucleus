@@ -13,7 +13,7 @@ Jádro pro vývoj webových stránek.
 ## Instalace:
 1. Stáhnout projekt a spustit příkazovou řádku
 2. "npm install"
-3. "npm install -g bower" (pokud chcete používat Bower)
+3. "bower install"
 4. "grunt"
 
 ## Použití:
